@@ -25,3 +25,20 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+<p>Share on:</p>
+<button onclick="shareFacebook()"><i class="fab fa-facebook"></i> Facebook</button> 
+    <button onclick="shareTwitter()"><i class="fab fa-twitter"></i> X (formerly Twitter)</button>
+
+    <script>
+        function shareFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent("{{ page.title | escape }}");
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+        }
+    </script>
