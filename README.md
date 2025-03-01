@@ -216,3 +216,5 @@ To test your theme, run `script/server` (or `bundle exec jekyll serve`) and open
 ## License
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+#   s t o r m b y t e l a b s . g i t h u b . i o  
+ 
